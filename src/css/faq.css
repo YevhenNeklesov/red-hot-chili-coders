@@ -40,6 +40,11 @@
   /* margin-bottom: 64px; */
 }
 
+.faq-btn-icon {
+  z-index: 999;
+  stroke: #fafafa;
+}
+
 .faq-title {
   color: rgba(250, 250, 250, 0.4);
   font-family: 'Inter Tight', sans-serif;
@@ -115,9 +120,7 @@
   border: 1px solid rgba(250, 250, 250, 0.5);
   background-color: transparent;
 }
-.faq-btn-icon {
-  stroke: #fafafa;
-}
+
 .arrow-up {
   transform: rotate(180deg);
 }
@@ -167,7 +170,7 @@
   }
 
   .faq-list .faq-item:nth-child(6) .faq-item-title {
-    max-width: 485px;
+    max-width: 470px;
   }
 
   .faq-item {
