@@ -1,9 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     padding: 0;
     box-sizing: border-box;
     background-color: #1c1d20;
-    color: #fafafa; /* White text */
+    color: #fafafa;
   }
   
   #benefits {
@@ -13,15 +12,20 @@ body {
     padding-bottom: 64px;
     margin: 0 auto;
     }
-  
+
     .benefits-icon {
+      display: flex;
       width: 48px;
       height: 48px;
       border-radius: 10px;
       background-color: #ed3b44;
+      align-items: center;
+      justify-content: center;
     }
   
-    .benefits-icon-svg {}
+    .benefits-icon-svg {
+        fill: #fafafa; 
+    }
   
   #benefits h2 {
     font-family: "Inter Tight", sans-serif;
