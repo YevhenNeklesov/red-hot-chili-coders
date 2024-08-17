@@ -1,0 +1,72 @@
+.covers-section {
+    position: relative;
+    padding: 20px;
+    background-image: url('../img/covers-section/elements_vectors.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* .covers-cover {
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+} */
+
+.covers-list {
+    height: 100vh;
+    display: flex;
+    transform: rotate(16deg);
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll-covers 10s linear infinite;
+}
+
+.cover-item {
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 8);
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes scroll-covers {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+    /* mobile styles */
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    /* mobile adaptive styles */
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    /* tablet styles */
+}
+
+@media (min-width: 1440px) {
+    /* desktop styles */
+}
