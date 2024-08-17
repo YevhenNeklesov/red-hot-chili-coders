@@ -1,3 +1,4 @@
+
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -14,3 +15,4 @@ faqBtns.forEach(button => {
         arrowIcon.classList.toggle('arrow-up');
     })
 });
+
