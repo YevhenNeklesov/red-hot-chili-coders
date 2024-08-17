@@ -3,9 +3,9 @@
      margin-bottom: 164px;
  } */
 
- /* .icon-accordeon-arrow-down {
+ .faq-btn-icon {
     fill: #fafafa;
- } */
+ }
   .accordion-container .ac {
       border: none;
       background-color: transparent;
@@ -142,6 +142,10 @@
 
 }
 @media screen and (min-width: 1440px) {
+
+    .accordion-container .ac {
+            border: none;}
+
     .faq-section {
             margin-bottom: 164px;
         }
