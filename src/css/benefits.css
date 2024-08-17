@@ -24,7 +24,8 @@ body {
     }
   
     .benefits-icon-svg {
-        fill: #fafafa; 
+        stroke: #fafafa;
+        fill: none; 
     }
   
   #benefits h2 {
