@@ -3,9 +3,7 @@
      margin-bottom: 164px;
  } */
 
- .faq-btn-icon {
-    fill: #fafafa;
- }
+
   .accordion-container .ac {
       border: none;
       background-color: transparent;
@@ -108,7 +106,12 @@
                  .accordion-container .ac .ac-trigger:focus {
                      border-color: #fafafa;
                  }
+                  .faq-btn-icon {
+    fill: #fafafa;
+ }
                  }
+
+
 
 
 @media screen and (max-width: 350px) {
