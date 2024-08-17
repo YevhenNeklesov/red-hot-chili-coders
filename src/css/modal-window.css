@@ -1,6 +1,6 @@
 /* ______________MODAL_________________ */
 
-.modal-mob {
+.modal-window-section {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -8,17 +8,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  align-items: center;
   background-color: black;
   display: flex;
   flex-direction: column;
-  padding: 32px 16px 64px 16px;
+  padding: 32px 0 64px 0;
+}
+
+.modal-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .modal-mob {
+  .modal-window-section {
     background-image: url(/img/modal-window/modal-background-2x.jpeg);
   }
 }
@@ -31,7 +36,7 @@
   height: 28px;
   padding: 0;
   background-color: transparent;
-  margin-bottom: auto;
+  margin-bottom: 242px;
   margin-left: auto;
   border: none;
 }
@@ -45,7 +50,7 @@
   flex-direction: column;
   text-align: center;
   gap: 12px;
-  margin-bottom: auto;
+  margin-bottom: 289px;
 }
 
 .modal-link {
