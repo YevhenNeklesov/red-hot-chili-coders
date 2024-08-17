@@ -1,0 +1,21 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    background-color: transparent;
+}
+.logo-wrap{
+    display: flex;
+    align-items: flex-start;
+}
+.menu-btn{
+    display: block;
+    padding: 10px;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: underline;
+    border: none;
+}
