@@ -1,4 +1,3 @@
-
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -27,22 +26,10 @@ const swiper = new Swiper('.swiper', {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+    tabKeys: true,
+    pageUpDown: true,
   },
   touch: {
     enabled: true,
   },
-});
-
-swiper.on('slideChange', () => {
-  if (swiper.isBeginning) {
-    document.querySelector('.swiper-prev').classList.add('swiper-button-disabled');
-  } else {
-    document.querySelector('.swiper-prev').classList.remove('swiper-button-disabled');
-  }
-
-  if (swiper.isEnd) {
-    document.querySelector('.swiper-next').classList.add('swiper-button-disabled');
-  } else {
-    document.querySelector('.swiper-next').classList.remove('swiper-button-disabled');
-  }
 });
