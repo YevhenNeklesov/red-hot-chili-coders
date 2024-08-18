@@ -1,16 +1,32 @@
-<header class="header">
-    <div class="header-container">
-        <div class="logo-wrap">
-            <img src="../img/logo-img.png" class="img-logo">
-            <span class="logo-text">jefferson*</span>
-        </div>
-        <button class="menu-btn">Menu</button>
-        <ul class="menu-list">
-            <li class="menu-item"><a class="menu-link" href="#">About me</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Benefits</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Projects</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">FAQ</a></li>
+<header class="PageHeader">
+    <div class="HeaderWrapper">
+      <a href="./index.html" class="HeaderLogo">
+        <img class="HeaderLogoImage" srcset="./img/logo@2x.png 2x" src="./img/logo.png" alt="dev" width="80"
+          height="80" />
+        <p class="HeaderLogoText">jefferson*</p>
+      </a>
+      <nav class="HeaderNavigation">
+        <button class="HeaderMenuButton" type="button">Menu</button>
+        <ul class="HeaderMenuList">
+          <li class="HeaderMenuItem">
+            <a href="#about-me" class="HeaderMenuLink"> About me </a>
+          </li>
+          <li class="HeaderMenuItem">
+            <a href="#Benefits" class="HeaderMenuLink"> Benefits </a>
+          </li>
+          <li class="HeaderMenuItem">
+            <a href="#projects" class="HeaderMenuLink"> Projects </a>
+          </li>
+          <li class="HeaderMenuItem">
+            <a href="#FAQ" class="HeaderMenuLink"> FAQ </a>
+          </li>
         </ul>
-        <a href="#work-together" class="order-btn">Order the Project</a>
+      </nav>
+      <a href="#WorkTogether" class="HeaderOrderLink"> Order the project </a>
+      <button id="openModal" class="HeaderBurgerButton" type="button">
+        <svg class="HeaderBurgerVector" width="28" height="28">
+          <use href="img/icons.svg#icon-menu-burger"></use>
+        </svg>
+      </button>
     </div>
-</header>
+  </header>
