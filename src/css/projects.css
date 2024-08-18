@@ -1,0 +1,404 @@
+/* Стилі для мобільних пристроїв тут */
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .projects-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    margin-bottom: 32px;
+    border-radius: 24px;
+  }
+
+  .project-descr {
+    background-color: #fbfbfb;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 32px;
+  }
+
+  .technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 96px;
+  }
+
+  .technology-name {
+    display: flex;
+    padding: 13px 18px 13px 18px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+  }
+
+  .project-name {
+    color: rgb(28, 29, 32);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .project-ghub-link {
+    padding: 13px 32px 13px 32px;
+    border-radius: 60px;
+    background: rgb(237, 59, 68);
+    color: #fafafa;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .project-img-wrap {
+    border-radius: 0px 0px 24px 24px;
+    background: rgb(36, 37, 39);
+    padding: 100px 16px 100px 16px;
+  }
+
+  .swiper-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .swiper-prev {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .icon-prev {
+    height: 24px;
+    width: 24px;
+  }
+
+  .swiper-next {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    cursor: pointer;
+  }
+
+  .icon-next {
+    height: 24px;
+    width: 24px;
+  }
+
+  .swiper-button-disabled {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    stroke: #3b3b3b;
+    cursor: default;
+  }
+}
+
+/* Планшети (з 768px) */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  /* Стилі для планшетів тут */
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .projects-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    margin-bottom: 64px;
+    border-radius: 24px;
+  }
+
+  .project-descr {
+    background-color: #fbfbfb;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 64px;
+  }
+
+  .technologies-list {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 164px;
+  }
+
+  .technology-name {
+    display: flex;
+    padding: 18px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    color: rgb(28, 29, 32);
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .project-name {
+    width: 494px;
+    color: rgb(28, 29, 32);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+
+  .project-ghub-link {
+    padding: 18px 50px 18px 50px;
+    border-radius: 60px;
+    background: rgb(237, 59, 68);
+    color: rgb(250, 250, 250);
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .project-ghub-link:hover,
+  .project-ghub-link:focus {
+    background-color: #e0373f;
+  }
+
+  .project-img-wrap {
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 24px 24px;
+    background: rgb(36, 37, 39);
+    padding: 120px 45px 120px 45px;
+  }
+
+  .swiper-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .swiper-prev {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 68px;
+    padding: 18px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .swiper-next {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 68px;
+    padding: 18px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    cursor: pointer;
+  }
+
+  .swiper-next:hover,
+  .swiper-prev:hover {
+    stroke: rgb(59, 59, 59);
+  }
+
+  .swiper-button-disabled {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    stroke: #3b3b3b;
+    cursor: default;
+  }
+}
+
+/* Десктоп (з 1440px) */
+@media screen and (min-width: 1440px) {
+  /* Стилі для десктопу тут */
+
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .projects-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 64px;
+    border-radius: 24px;
+  }
+
+  .project-descr {
+    width: 50%;
+    background-color: #fbfbfb;
+    border-radius: 24px 0px 0px 24px;
+    padding: 64px;
+  }
+
+  .technologies-list {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 164px;
+  }
+
+  .technology-name {
+    display: flex;
+    padding: 18px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    color: rgb(28, 29, 32);
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .project-name {
+    width: 494px;
+    color: rgb(28, 29, 32);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+
+  .project-ghub-link {
+    padding: 18px 50px 18px 50px;
+    border-radius: 60px;
+    background: rgb(237, 59, 68);
+    color: #fafafa;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .project-ghub-link:hover,
+  .project-ghub-link:focus {
+    background-color: #e0373f;
+  }
+
+  .project-img-wrap {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 0px 24px 24px 0px;
+    background: rgb(36, 37, 39);
+    padding: 120px 45px 120px 45px;
+  }
+
+  .swiper-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .swiper-prev {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 68px;
+    padding: 18px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .swiper-next {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 68px;
+    padding: 18px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    fill: transparent;
+    stroke: #fafafa;
+    cursor: pointer;
+  }
+
+  .swiper-next:hover,
+  .swiper-prev:hover {
+    stroke: rgb(59, 59, 59);
+  }
+
+  .swiper-button-disabled {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    stroke: #3b3b3b;
+    cursor: default;
+  }
+}
