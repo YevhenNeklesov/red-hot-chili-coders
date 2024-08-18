@@ -5,10 +5,7 @@ body {
     color: #fafafa;
   }
   
-  #benefits {
-    width: 344px;
-    padding: 0px;
-    padding-top: 0px;
+   #benefits {
     padding-bottom: 64px;
     margin: 0 auto;
     }
@@ -99,7 +96,6 @@ body {
   
   @media (min-width: 768px) {
   #benefits {
-    width: 704px;
     padding-bottom: 48px;
   }
   
@@ -121,7 +117,6 @@ body {
       display: flex;
       justify-content: space-between;
         text-align: left;
-        width: 1376px;
         padding-bottom: 164px;
     }
   
