@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper.project-swiper', {
   // Основні параметри
   cssMode: false,
   spaceBetween: 30,
