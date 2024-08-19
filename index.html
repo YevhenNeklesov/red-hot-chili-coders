@@ -14,63 +14,75 @@
     <script type="module" crossorigin src="/red-hot-chili-coders/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/red-hot-chili-coders/assets/vendor-CedAxGuU.js">
     <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/vendor-DqSLXnKQ.css">
-    <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/index-1Bb1-GZD.css">
+    <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/index-CA_tT0e8.css">
   </head>
   <body>
     <header class="PageHeader">
-    <div class="HeaderWrapper">
-      <a href="./index.html" class="HeaderLogo">
-        <img class="HeaderLogoImage" srcset="/red-hot-chili-coders/assets/logo@2x-Ds4-sZeL.png 2x" src="/red-hot-chili-coders/assets/logo-BxA63Dcg.png" alt="dev" width="80"
-          height="80" />
-        <p class="HeaderLogoText">jefferson*</p>
-      </a>
-      <nav class="HeaderNavigation">
-        <button class="HeaderMenuButton" type="button">Menu</button>
-        <ul class="HeaderMenuList">
-          <li class="HeaderMenuItem">
-            <a href="#about-me" class="HeaderMenuLink"> About me </a>
-          </li>
-          <li class="HeaderMenuItem">
-            <a href="#Benefits" class="HeaderMenuLink"> Benefits </a>
-          </li>
-          <li class="HeaderMenuItem">
-            <a href="#projects" class="HeaderMenuLink"> Projects </a>
-          </li>
-          <li class="HeaderMenuItem">
-            <a href="#FAQ" class="HeaderMenuLink"> FAQ </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="work-together" class="HeaderOrderLink"> Order the project </a>
-      <button id="openModal" class="HeaderBurgerButton" type="button">
-        <svg class="HeaderBurgerVector" width="28" height="28">
-          <use href="/red-hot-chili-coders/assets/icons-DgYWycAW.svg#icon-menu-burger"></use>
-        </svg>
-      </button>
-    </div>
-  </header>
+  <div class="HeaderWrapper">
+    <a href="./index.html" class="HeaderLogo">
+      <img
+        class="HeaderLogoImage"
+        srcset="/red-hot-chili-coders/assets/logo@2x-Ds4-sZeL.png 2x"
+        src="/red-hot-chili-coders/assets/logo-BxA63Dcg.png"
+        alt="dev"
+        width="80"
+        height="80"
+      />
+      <p class="HeaderLogoText">jefferson*</p>
+    </a>
+    <nav class="HeaderNavigation">
+      <button class="HeaderMenuButton" type="button">Menu</button>
+      <ul class="HeaderMenuList">
+        <li class="HeaderMenuItem">
+          <a href="#about-me" class="HeaderMenuLink"> About me </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#Benefits" class="HeaderMenuLink"> Benefits </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#projects" class="HeaderMenuLink"> Projects </a>
+        </li>
+        <li class="HeaderMenuItem">
+          <a href="#FAQ" class="HeaderMenuLink"> FAQ </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="work-together" class="HeaderOrderLink"> Order the project </a>
+    <button id="openModal" class="HeaderBurgerButton js-open-btn" type="button">
+      <svg class="HeaderBurgerVector" width="28" height="28">
+        <use href="/red-hot-chili-coders/assets/icons-DgYWycAW.svg#icon-menu-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
 
-    
-<section class="modal-window-section visually-hidden">
+    <section class="modal-window-section js-modal-window is-open">
   <div class="container">
     <h2 class="visually-hidden">Thank you for your interest in cooperation!</h2>
     <div class="modal-mob">
-      <button class="modal-close-btn" type="button">
+      <button class="modal-close-btn js-modal-close-btn" type="button">
         <svg class="modal-close-icon" width="28" height="28">
           <use href="/red-hot-chili-coders/assets/symbol-defs-Cb_sbMN5.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="modal-list">
-        <li><a class="modal-link" href="">About me</a></li>
-        <li><a class="modal-link" href="">Benefits</a></li>
-        <li><a class="modal-link" href="">Projects</a></li>
-        <li><a class="modal-link" href="">FAQ</a></li>
+        <li>
+          <a class="modal-link js-modal-link" href="#about-me">About me</a>
+        </li>
+        <li>
+          <a class="modal-link js-modal-link" href="#benefits">Benefits</a>
+        </li>
+        <li>
+          <a class="modal-link js-modal-link" href="#projects">Projects</a>
+        </li>
+        <li><a class="modal-link js-modal-link" href="#faq">FAQ</a></li>
       </ul>
-      <button class="modal-order-btn" type="button">Order the project</button>
+      <a href="#work-together" class="modal-order-link js-modal-link"
+        >Order the project</a
+      >
     </div>
   </div>
 </section>
-
 
     <main>
       <section class="section-hero" id="hero-section-id">
@@ -420,7 +432,7 @@
     </div>
   </div>
 </section>
-      <section class="faq-section">
+      <section id="faq" class="faq-section">
   <div class="faq-container container">
     <h2 class="faq-title">FAQ</h2>
     <ul class="faq-list accordion-container">
