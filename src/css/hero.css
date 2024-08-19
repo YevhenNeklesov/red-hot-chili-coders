@@ -3,15 +3,17 @@
   --second-color: #1c1d20;
   --third-color: #fafafa;
   --main-color: #ed3b44;
-  --bg-color: linear-gradient(270deg,
-      var(--second-color) 49.69%,
-      var(--third-color) 67.71%,
-      var(--main-color) 99.91%);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
   --bg-d-image: url(../img/hero/d-hero-bg.png);
   --bg-d-image2x: url(../img/hero/d-hero-bg@2x.png);
   --bg-t-image: url(../img/hero/t-hero-bg.png);
   --bg-t-image2x: url(../img/hero/t-hero-bg@2x.png);
-  --bg-m-image:url(../img/hero/m-hero-bg.png);
+  --bg-m-image: url(../img/hero/m-hero-bg.png);
   --bg-m-image2x: url(../img/hero/m-hero-bg@2x.png);
 }
 
@@ -20,17 +22,19 @@
   --font-color: var(--third-color);
   --bg-d-image: url(../img/hero/d-hero-bg.png);
   --bg-d-image2x: url(../img/hero/d-hero-bg@2x.png);
-  --bg-color: linear-gradient(270deg,
-      var(--second-color) 49.69%,
-      var(--third-color) 67.71%,
-      var(--main-color) 99.91%);
+  --bg-color: linear-gradient(
+    270deg,
+    var(--second-color) 49.69%,
+    var(--third-color) 67.71%,
+    var(--main-color) 99.91%
+  );
 }
 
 /*======= Hero Mobile Styles   ============*/
 .section-hero {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background: var(--bg-color);
   background-image: var(--bg-m-image);
   background-repeat: no-repeat;
@@ -50,8 +54,8 @@ box-sizing: border-box;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
-screen and (min-resolution: 2dppx) and (min-width: 320px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   #section-hero-id {
     background-image: var(--bg-m-image2x);
   }
@@ -77,7 +81,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   color: inherit;
   margin-left: auto;
   margin-right: auto;
-text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .hero-contact,
@@ -127,7 +131,6 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   padding: 6px 12px;
   height: 37px;
   cursor: pointer;
-
 }
 
 .social-icon:hover,
@@ -138,7 +141,6 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -163,10 +165,10 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-position: left;
     background-size: 768px 1024px;
     background-repeat: no-repeat;
-      background-position: center;
-      max-width: 1440px;
-      background-size: cover;
-      margin: 0 auto;
+    background-position: center;
+    max-width: 1440px;
+    background-size: cover;
+    margin: 0 auto;
   }
 
   .hero {
@@ -232,8 +234,8 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .section-hero {
     background-image: var(--bg-t-image2x);
   }
@@ -256,11 +258,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-      background-position: center;
-      max-width: 1440px;
-      background-size: cover;
-      margin: 0 auto;
-      max-width: 100%;
+    background-position: center;
+    max-width: 1440px;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .hero {
@@ -283,8 +285,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppx) and (min-width: 1440px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .section-hero {
     background-image: var(--bg-d-image2x);
   }

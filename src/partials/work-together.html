@@ -1,46 +1,90 @@
 <section class="work-together" id="work-together">
-    <div class="container">
-        <div class="work-together-inner">
-            <div class="work-together-title-wrap">
-                <picture>
-                    <source srcset="/img/work-together-img-tab-1x.png, /img/work-together-img-tab-2x.png 2x" media="(min-width: 768px)">
-                    <source srcset="/img/work-together-img-mob-1x.png, /img/work-together-img-mob-2x.png 2x" media="(max-width: 768px)">
-                    <img src="img/work-together-img-tab-1x.png" alt="Man with glasses">
-                </picture>
-                <h2 class="work-together-title">Let's <span class="work-together-title-mark">work</span></h2>
-                <h2 class="work-together-title">together</h2>
-            </div>
-            <form class="work-together-form">
-                
-                    <div class="work-together-input-wrap">
-                        <label class="work-together-label" for="email">
-                            <input class="work-together-input" type="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" id="email" name="email" placeholder="clients@gmail.com" required>
-                        </label>
-                        <span class="success">Success!</span>
-                        <span class="error">Invalid email, try again</span>
-                    </div>
-                    <label class="work-together-label" for="comments">
-                        <input class="work-together-input" type="text" id="comments" name="comments" placeholder="comments" required>
-                    </label>
-                
-                <button class="work-together-form-btn" type="submit">Send</button>
-            </form>
-            <ul class="work-together-list">
-                <li class="work-together-list-item"><a class="work-together-item-link" href="email:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
-                <li class="work-together-list-item"><a class="work-together-item-link" href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="work-together-inner">
+      <div class="work-together-title-wrap">
+        <picture>
+          <source
+            srcset="
+              /img/work-together-img-tab-1x.png,
+              /img/work-together-img-tab-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/work-together-img-mob-1x.png,
+              /img/work-together-img-mob-2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img src="img/work-together-img-tab-1x.png" alt="Man with glasses" />
+        </picture>
+        <h2 class="work-together-title">
+          Let's <span class="work-together-title-mark">work</span>
+        </h2>
+        <h2 class="work-together-title-bottom">together</h2>
+      </div>
+      <form class="work-together-form">
+        <!-- <div class="work-together-input-wrap"> -->
+        <label class="work-together-label" for="email">
+          <input
+            class="work-together-input"
+            type="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            id="email"
+            name="email"
+            placeholder="clients@gmail.com"
+            required
+          />
+          <span class="success">Success!</span>
+          <span class="error">Invalid email, try again</span>
+        </label>
+
+        <!-- </div> -->
+        <label class="work-together-label-comment" for="comments">
+          <input
+            class="work-together-input"
+            type="text"
+            id="comments"
+            name="comments"
+            placeholder="comments"
+            required
+          />
+        </label>
+
+        <button class="work-together-form-btn" type="submit">Send</button>
+      </form>
+      <ul class="work-together-list">
+        <li class="work-together-list-item">
+          <a
+            class="work-together-item-link"
+            href="email:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="work-together-list-item">
+          <a class="work-together-item-link" href="tel:+380 11 1111 11 11"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
 </section>
 
 <div class="backdrop">
-    <div class="work-together-modal">
-        <button class="work-together-modal-btn-x" type="button">
-            <svg class="work-together-modal-btn-x-svg" width="24" height="24">
-                <use href="/img/symbol-defs.svg#icon-close"></use>
-            </svg>
-        </button>
-        <h2 class="work-together-modal-title">Thank you for your interest in cooperation!</h2>
-        <p class="work-together-modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
-    </div>
+  <div class="work-together-modal">
+    <button class="work-together-modal-btn-x" type="button">
+      <svg class="work-together-modal-btn-x-svg" width="24" height="24">
+        <use href="/img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="work-together-modal-title">
+      Thank you for your interest in cooperation!
+    </h2>
+    <p class="work-together-modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
 </div>

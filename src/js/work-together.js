@@ -92,10 +92,10 @@ async function handleClickBtnSend(event){
 
     try{
         await addData(formData);
-        form.reset();
+        
         localStorage.removeItem(STORAGE_KEY);
         modalWindow.classList.add("is-open");
-
+        form.reset();
     }catch(err){
         return iziToast.show({
             title: 'Error',

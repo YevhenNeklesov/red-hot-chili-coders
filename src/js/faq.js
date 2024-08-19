@@ -2,7 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 try {
-    const accordionFaq = new Accordion('.accordion-container', {
+    new Accordion('.faq-accordion-container', {
         duration: 400,
         showMultiple: true,
     });
@@ -20,3 +20,8 @@ try {
 catch (error){
 console.error ("Error", error)
 }
+
+// new Accordion('.faq-accordion-container', {
+//     duration: 600,
+//     showMultiple: false,
+// });
