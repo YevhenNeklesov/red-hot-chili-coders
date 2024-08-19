@@ -1,4 +1,4 @@
-
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 (() => {
     const mobileMenu = document.querySelector('.js-modal-window');
@@ -12,10 +12,7 @@
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         mobileMenu.classList.toggle('is-open');
   
-        const scrollLockMethod = !isMenuOpen
-            ? 'disableBodyScroll'
-            : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
+!isMenuOpen? disableBodyScroll(document.body): enableBodyScroll(document.body)
     };
     closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
     openMenuBtn.addEventListener('click', toggleMenu);
