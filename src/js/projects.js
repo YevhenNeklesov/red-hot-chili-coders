@@ -16,7 +16,6 @@ const swiper = new Swiper('.swiper.project-swiper', {
     slideShadows: true,
   },
 
-
   // Навігаційні кнопки
   navigation: {
     nextEl: '.swiper-next',
@@ -33,3 +32,5 @@ const swiper = new Swiper('.swiper.project-swiper', {
     enabled: true,
   },
 });
+
+
