@@ -1,12 +1,13 @@
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 
-new Accordion('.accordion-container', {
+const accordionFaq = new Accordion('.accordion-container', {
     duration: 400,
     showMultiple: true,
 });
+
+console.log('Accordion initialized:', accordionFaq);
 
 const faqBtns = document.querySelectorAll('.faq-item-btn');
 
@@ -16,4 +17,7 @@ faqBtns.forEach(button => {
         arrowIcon.classList.toggle('arrow-up');
     })
 });
+
+
+
 

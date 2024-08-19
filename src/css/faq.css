@@ -33,7 +33,7 @@
 }
 
 .faq-container {
-  background: #1c1d20;
+  /* background: #1c1d20; */
   padding-bottom: 64px;
 }
 .faq-section {
@@ -41,7 +41,6 @@
 }
 
 .faq-btn-icon {
-  z-index: 999;
   stroke: #fafafa;
 }
 
@@ -123,6 +122,7 @@
 
 .arrow-up {
   transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
 .accordion-container .ac .ac-trigger:hover {

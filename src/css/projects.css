@@ -1,7 +1,7 @@
 /* Стилі для мобільних пристроїв тут */
 
 @media screen and (max-width: 767px) {
-  .section {
+  .projects-section {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -44,6 +44,7 @@
 
   .technology-name {
     display: flex;
+    color: rgb(28, 29, 32);
     padding: 13px 18px 13px 18px;
     border: 1px solid rgba(28, 29, 32, 0.2);
     border-radius: 60px;
@@ -132,7 +133,7 @@
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   /* Стилі для планшетів тут */
 
-  .section {
+  .projects-section {
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -268,9 +269,10 @@
 @media screen and (min-width: 1440px) {
   /* Стилі для десктопу тут */
 
-  .section {
+  .projects-section {
     padding-top: 82px;
     padding-bottom: 82px;
+    
   }
 
   .projects-title {
@@ -291,7 +293,7 @@
 
   .swiper-slide {
     display: flex !important;
-    flex-direction: row;
+    flex-direction: row !important; 
     justify-content: center;
     margin-bottom: 64px;
     border-radius: 24px;
@@ -359,6 +361,7 @@
 
   .swiper-buttons {
     display: flex;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
