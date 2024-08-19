@@ -42,6 +42,12 @@ box-sizing: border-box;
   background-size: cover;
   max-width: 100%;
 }
+@media screen and (max-width: 400px) {
+  .hero-contact {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
 screen and (min-resolution: 2dppx) and (min-width: 320px),
@@ -107,6 +113,7 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   padding-top: 6px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .hero-email {
@@ -119,6 +126,7 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   padding: 6px 12px;
   height: 37px;
+  cursor: pointer;
 
 }
 
