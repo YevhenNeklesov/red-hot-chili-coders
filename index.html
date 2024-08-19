@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/red-hot-chili-coders/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/red-hot-chili-coders/assets/vendor-CM6bRD9B.js">
     <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/vendor-DqSLXnKQ.css">
-    <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/index-B2ZiVw2R.css">
+    <link rel="stylesheet" crossorigin href="/red-hot-chili-coders/assets/index-_xU1iUuy.css">
   </head>
   <body>
     <header class="PageHeader">
@@ -1029,16 +1029,18 @@
                 <h2 class="work-together-title">together</h2>
             </div>
             <form class="work-together-form">
-                <div class="work-together-input-wrap">
-                    <label class="work-together-label" for="email">
-                        <input class="work-together-input" type="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" id="email" name="email" placeholder="clients@gmail.com" required>
+                
+                    <div class="work-together-input-wrap">
+                        <label class="work-together-label" for="email">
+                            <input class="work-together-input" type="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" id="email" name="email" placeholder="clients@gmail.com" required>
+                        </label>
+                        <span class="success">Success!</span>
+                        <span class="error">Invalid email, try again</span>
+                    </div>
+                    <label class="work-together-label" for="comments">
+                        <input class="work-together-input" type="text" id="comments" name="comments" placeholder="comments" required>
                     </label>
-                    <span class="success">Success!</span>
-                    <span class="error">Invalid email, try again</span>
-                </div>
-                <label class="work-together-label" for="comments">
-                    <input class="work-together-input" type="text" id="comments" name="comments" placeholder="comments" required>
-                </label>
+                
                 <button class="work-together-form-btn" type="submit">Send</button>
             </form>
             <ul class="work-together-list">
@@ -1049,6 +1051,17 @@
     </div>
 </section>
 
+<div class="backdrop">
+    <div class="work-together-modal">
+        <button class="work-together-modal-btn-x" type="button">
+            <svg class="work-together-modal-btn-x-svg" width="24" height="24">
+                <use href="/red-hot-chili-coders/assets/symbol-defs-Cb_sbMN5.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="work-together-modal-title">Thank you for your interest in cooperation!</h2>
+        <p class="work-together-modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
+</div>
 
     </main>
   </body>
