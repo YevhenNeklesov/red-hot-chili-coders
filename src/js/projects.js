@@ -1,4 +1,3 @@
-
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -17,7 +16,6 @@ const swiper = new Swiper('.swiper', {
     slideShadows: true,
   },
 
-
   // Навігаційні кнопки
   navigation: {
     nextEl: '.swiper-next',
@@ -35,14 +33,22 @@ const swiper = new Swiper('.swiper', {
 
 swiper.on('slideChange', () => {
   if (swiper.isBeginning) {
-    document.querySelector('.swiper-prev').classList.add('swiper-button-disabled');
+    document
+      .querySelector('.swiper-prev')
+      .classList.add('swiper-button-disabled');
   } else {
-    document.querySelector('.swiper-prev').classList.remove('swiper-button-disabled');
+    document
+      .querySelector('.swiper-prev')
+      .classList.remove('swiper-button-disabled');
   }
 
   if (swiper.isEnd) {
-    document.querySelector('.swiper-next').classList.add('swiper-button-disabled');
+    document
+      .querySelector('.swiper-next')
+      .classList.add('swiper-button-disabled');
   } else {
-    document.querySelector('.swiper-next').classList.remove('swiper-button-disabled');
+    document
+      .querySelector('.swiper-next')
+      .classList.remove('swiper-button-disabled');
   }
 });
