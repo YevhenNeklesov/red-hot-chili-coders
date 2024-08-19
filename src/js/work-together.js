@@ -22,6 +22,10 @@ const errorMessage = document.querySelector(".error");
 const emailInput = document.querySelector("input#email");
 const commentsInput = document.querySelector("input#comments");
 
+const modalWindow = document.querySelector(".backdrop");
+const modalBtnClose = document.querySelector(".work-together-modal-btn-x");
+
+
 populateForm();
 checkFormInput();
 
@@ -33,14 +37,23 @@ function checkFormInput(){
         successMessage.style.display = 'block';
         emailInput.style.borderBottomColor = '#3CBC81';
         errorMessage.style.display = 'none';
-    } else {
+    }else {
         errorMessage.style.display = 'block';
         emailInput.style.borderBottomColor = '#E74A3B';
         successMessage.style.display = 'none';
     }
+
+    if(!emailInput.value){
+        errorMessage.style.display = 'none';
+        successMessage.style.display = 'none';
+        emailInput.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
+    }
     if(commentsInput.value){
         commentsInput.style.borderBottomColor = 'rgba(250, 250, 250, 0.50)';
+    }else{
+        commentsInput.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
     }
+
 }
 
 function handleFormInput(){
@@ -60,8 +73,8 @@ async function handleClickBtnSend(event){
     emailInput.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
     commentsInput.style.borderBottomColor = 'rgba(250, 250, 250, 0.20)';
 
-    if(!formData.email || !formData.comment){
-        return iziToast.show({
+    if(!emailInput.value.trim() || !commentsInput.value.trim()){
+        iziToast.show({
             title: 'Caution',
             titleColor: '#FAFAFB',
             titleSize: '16px',
@@ -81,22 +94,7 @@ async function handleClickBtnSend(event){
         await addData(formData);
         form.reset();
         localStorage.removeItem(STORAGE_KEY);
-        return iziToast.show({
-            title: 'Thank you for your interest in cooperation!',
-            titleColor: '#FAFAFA',
-            titleSize: '20px',
-            titleLineHeight: '30px',
-            message: `The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.`,
-            messageColor: 'rgba(250, 250, 250, 0.60)',
-            messageSize: '16px',
-            messageLineHeight: ' 24px',
-            backgroundColor: '#1C1D20',
-            position: 'center',
-            maxWidth: '492px',
-            progressBar: 'false',
-            closeOnEscape: 'true',
-            close: 'true',
-        });
+        modalWindow.classList.add("is-open");
 
     }catch(err){
         return iziToast.show({
@@ -146,3 +144,19 @@ function populateForm(){
     form.elements.email.value = savedFormData.email;
     form.elements.comments.value = savedFormData.comment;
 }
+
+modalBtnClose.addEventListener("click", function(){
+    modalWindow.style.display = 'none';
+})
+
+window.addEventListener("click", function(event){
+    if(event.target === modalWindow){
+        modalWindow.style.display = 'none';
+    }
+})
+
+window.addEventListener("keydown", function(event){
+    if(event.key === "Escape"){
+        modalWindow.style.display = 'none';
+    }
+})
