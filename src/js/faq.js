@@ -1,4 +1,3 @@
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -7,6 +6,7 @@ try {
         duration: 400,
         showMultiple: true,
     });
+
 
     const faqBtns = document.querySelectorAll('.faq-item-btn');
 
