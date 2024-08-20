@@ -17,14 +17,14 @@
   padding-bottom: 32px;
 }
 
-/* .work-together-title-wrap {
+.work-together-title-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 8px;
   justify-content: start;
   align-content: center;
   margin-bottom: 16px;
-} */
+}
 
 .work-together-title,
 .work-together-title-bottom {

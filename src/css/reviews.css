@@ -145,6 +145,15 @@
     width: 32px;
     height: 32px;
   }
+
+  .stub {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .stub-text {
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .reviews {

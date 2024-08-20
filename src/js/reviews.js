@@ -49,8 +49,6 @@ async function initReviews() {
       message:
         'Sorry, there was an error fetching the reviews. Please try again',
     });
-        swiperButtonPrev.classList.add('visually-hidden')
-    swiperButtonNext.classList.add('visually-hidden')
     stub.classList.remove('visually-hidden')
   }
 }
