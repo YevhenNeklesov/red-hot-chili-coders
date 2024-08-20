@@ -15,61 +15,50 @@ async function getReviews() {
   } catch (error) {
     console.log(error);
     throw error;
+    
   }
 }
-
-const swiperWrapper = document.querySelector('.reviews-list');
-const noData = document.querySelector('.no-data');
 const swiperButtonPrev = document.querySelector('.swiper-button-prev');
 const swiperButtonNext = document.querySelector('.swiper-button-next');
-
-async function initReviews() {
-  try {
-    const data = await getReviews();
-    console.log(data);
-
-    if (data.length === 0) {
-      noData.style.display = 'block';
-
-      swiperButtonPrev.style.display = 'none';
-      swiperButtonNext.style.display = 'none';
-      iziToast.error({
-        position: 'topRight',
-        message:
-          'Sorry, there are no reviews matching your search query. Please try again',
-      });
-    } else {
-      noData.style.display = 'none';
-      createReviews(data);
-      initializeSwiper();
-    }
-  } catch (err) {
-    noData.style.display = 'block';
-
-    iziToast.error({
-      position: 'topRight',
-      message:
-        'Sorry, there was an error fetching the reviews. Please try again',
-    });
-  }
-}
+const swiperWrapper = document.querySelector('.reviews-list');
+const stub = document.querySelector('.stub')
 
 function createReviews(cardReviews) {
-  const markup = cardReviews
+  return cardReviews
     .map(
       ({ _id, author, avatar_url, review }) => `
-      <li class="reviews-item swiper-slide" id="${_id}">
+      <li class="reviews-item swiper-slide">
         <img class="reviews-img" src="${avatar_url}" alt="foto" />
         <h3 class="reviews-subtitle">${author}</h3>
         <p class="reviews-text">${review}</p>
       </li>`
     )
     .join('');
-  swiperWrapper.insertAdjacentHTML('beforeend', markup);
 }
 
-function initializeSwiper() {
-  new Swiper('.reviews-swiper', {
+
+async function initReviews() {
+  try {
+    const data = await getReviews();
+      console.log(data);
+    swiperWrapper.insertAdjacentHTML('beforeend', createReviews(data));
+  } catch (err) {
+
+    iziToast.error({
+      position: 'topRight',
+      message:
+        'Sorry, there was an error fetching the reviews. Please try again',
+    });
+        swiperButtonPrev.classList.add('visually-hidden')
+    swiperButtonNext.classList.add('visually-hidden')
+    stub.classList.remove('visually-hidden')
+  }
+}
+
+
+
+
+  new Swiper('.reviews-swiper-container', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 16,
@@ -100,6 +89,5 @@ function initializeSwiper() {
       invert: true,
     },
   });
-}
 
 initReviews();
