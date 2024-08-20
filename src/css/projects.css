@@ -38,6 +38,7 @@
   align-items: center;
   padding: 100px 16px;
   background-color: rgba(36, 37, 39);
+  border-radius: 0 0 24px 24px;
 }
 
 .projects-tech-list {
@@ -63,8 +64,8 @@
   color: rgba(28, 29, 32);
   font-size: 24px;
   font-weight: 500;
-  line-height: 116.667%; 
-  letter-spacing: -.72px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
   margin-bottom: 32px;
 }
 
@@ -134,6 +135,7 @@
 @media only screen and (min-width: 768px) {
   .projects-content-light {
     padding: 64px 146px 64px 64px;
+  
   }
 
   .projects-content-dark {
@@ -179,11 +181,13 @@
   .projects-content-light {
     padding-right: 130px;
     width: 50%;
+    border-radius: 24px 0 0 24px;
   }
 
   .projects-content-dark {
     padding: 120px 37px;
     width: 50%;
+    border-radius: 0 24px 24px 0;
   }
 
   .projects-tech-list {
