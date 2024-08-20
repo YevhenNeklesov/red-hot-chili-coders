@@ -1,0 +1,181 @@
+.header {
+    padding: 20px 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #747bff;
+  }
+  
+  
+  .PageHeader {
+    position: absolute;
+    top: 32px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    padding: 0 15px;
+  }
+  
+  .HeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 343px;
+    min-height: 80px;
+  }
+  
+  .HeaderLogo {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .HeaderLogoText {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .HeaderBurgerButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      height: 28px;
+      width: 28px;
+    }
+  
+    .HeaderBurgerVector {
+      stroke: #fafafa;
+    }
+  }
+  
+  .HeaderNavigation {
+    display: none;
+  }
+  
+  .HeaderOrderLink {
+    display: none;
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    .HeaderBurgerButton {
+      display: none;
+    }
+  
+    .PageHeader {
+      padding: 0 32px;
+    }
+  
+    .HeaderWrapper {
+      width: 704px;
+    }
+  
+    .HeaderNavigation {
+      position: relative;
+      display: flex;
+    }
+  
+    .HeaderMenuButton {
+      display: flex;
+      width: 67px;
+      height: 39px;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-family: 'Inter Tight', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      color: #fafafa;
+      transition: color 250ms ease;
+    }
+  
+    .HeaderMenuList {
+      display: none;
+    }
+  
+    .MenuIsVisible {
+      display: flex;
+      position: absolute;
+      top: 47px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      animation: fadeIn 1s;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .HeaderMenuLink {
+      font-family: 'Inter Tight', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #fafafa;
+      transition: color 250ms ease;
+    }
+  
+    .HeaderOrderLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 60px;
+      width: 163px;
+      height: 55px;
+      background-color: #ed3b44;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #fafafa;
+      transition: background-color 250ms ease;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .HeaderWrapper {
+      width: 1376px;
+    }
+  
+    .HeaderMenuButton:hover,
+    .HeaderMenuLink:hover,
+    .HeaderMenuLink:focus {
+      color: #ed3b44;
+    }
+  
+    .HeaderOrderLink:hover {
+      background-color: #e0373f;
+    }
+  }
+  
