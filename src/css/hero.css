@@ -27,7 +27,7 @@
   background: var(--bg-color);
   background-image: var(--bg-m-image);
   background-repeat: no-repeat;
-  background-position: left;
+  /* background-position: left; */
   background-size: 375px 812px;
   max-width: 1440px;
   max-width: 100%;
@@ -151,9 +151,9 @@
     background-position: left;
     background-size: 768px 1024px;
     background-repeat: no-repeat;
-      background-position: left;
-      max-width: 1440px;
-      margin: 0 auto;
+    background-position: left;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .hero {
@@ -240,11 +240,10 @@
     background: var(--bg-color);
     background-image: var(--bg-d-image);
     background-repeat: no-repeat;
-      background-position: left;
-      max-width: 1440px;
-      margin: 0 auto;
-      max-width: 100%;
-
+    background-position: left;
+    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .hero {
