@@ -133,6 +133,16 @@
   border-color: #fafafa;
 }
 
+@media screen and (max-width: 340px) {
+  .faq-list .faq-item:nth-child(1) .faq-item-title {
+    max-width: 260px;
+  }
+
+  .faq-list .faq-item:nth-child(6) .faq-item-title {
+    max-width: 260px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .faq-container {
     padding-bottom: 96px;

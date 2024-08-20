@@ -6,11 +6,10 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 
-new Accordion('.list-about-me', {
-            duration: 600,
-    showMultiple: false,
+const options = {
     openOnInit: [0],
-});
+};
+new Accordion('.list-about-me', options);
 
 
 let parameters = {
@@ -23,7 +22,7 @@ let parameters = {
     spaceBetween: 0,
     initialSlide: 1,
     navigation: {
-        nextEl: '.about-me-swiper-btn-next',
+        nextEl: '.about-me-btn-next',
     },
     breakpoints: {
         320: {
@@ -44,6 +43,10 @@ let parameters = {
         1310: {
             slidesPerView: 'auto',
         },
+    },
+        keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
 };
 
