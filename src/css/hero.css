@@ -15,19 +15,8 @@
   --bg-t-image2x: url(../img/hero/t-hero-bg@2x.png);
   --bg-m-image: url(../img/hero/m-hero-bg.png);
   --bg-m-image2x: url(../img/hero/m-hero-bg@2x.png);
-}
-
-.section-hero {
   --main-color: #ed3b44;
   --font-color: var(--third-color);
-  --bg-d-image: url(../img/hero/d-hero-bg.png);
-  --bg-d-image2x: url(../img/hero/d-hero-bg@2x.png);
-  --bg-color: linear-gradient(
-    270deg,
-    var(--second-color) 49.69%,
-    var(--third-color) 67.71%,
-    var(--main-color) 99.91%
-  );
 }
 
 /*======= Hero Mobile Styles   ============*/
