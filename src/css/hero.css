@@ -40,10 +40,7 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: 375px 812px;
-  background-repeat: no-repeat;
-  background-position: center;
   max-width: 1440px;
-  background-size: cover;
   max-width: 100%;
 }
 @media screen and (max-width: 400px) {
@@ -165,10 +162,9 @@
     background-position: left;
     background-size: 768px 1024px;
     background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1440px;
-    background-size: cover;
-    margin: 0 auto;
+      background-position: left;
+      max-width: 1440px;
+      margin: 0 auto;
   }
 
   .hero {
@@ -255,14 +251,11 @@
     background: var(--bg-color);
     background-image: var(--bg-d-image);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1440px;
-    background-size: cover;
-    margin: 0 auto;
-    max-width: 100%;
+      background-position: left;
+      max-width: 1440px;
+      margin: 0 auto;
+      max-width: 100%;
+
   }
 
   .hero {
