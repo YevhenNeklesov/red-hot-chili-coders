@@ -1,36 +1,20 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-
-const swiper = new Swiper('.swiper.project-swiper', {
-  // Основні параметри
-  cssMode: false,
-  spaceBetween: 30,
-  slidesPerView: 'auto',
-  freeMode: true,
-  effect: 'cube',
-
-  cubeEffect: {
-    shadow: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-    slideShadows: true,
-  },
-
-  // Навігаційні кнопки
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-  },
-  mousewheel: false,
+import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+const prevButtonEl = document.querySelector('.projects-button-prev-js');
+const nextButtonEl = document.querySelector('.projects-button-next-js');
+Swiper.use([Navigation, Keyboard]);
+new Swiper('.projects-swiper-container', {
   keyboard: {
     enabled: true,
-    onlyInViewport: true,
-    tabKeys: true,
-    pageUpDown: true,
+    onlyInViewport: false,
   },
-  touch: {
-    enabled: true,
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 280,
+  navigation: {
+    nextEl: nextButtonEl,
+    prevEl: prevButtonEl,
   },
 });
-
-
