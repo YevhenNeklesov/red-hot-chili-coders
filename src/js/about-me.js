@@ -6,10 +6,11 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 
-const options = {
+new Accordion('.list-about-me', {
+            duration: 600,
+    showMultiple: false,
     openOnInit: [0],
-};
-new Accordion('.list-about-me', options);
+});
 
 
 let parameters = {
