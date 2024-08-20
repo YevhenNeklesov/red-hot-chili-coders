@@ -23,16 +23,18 @@
 .section-hero {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background: var(--bg-color);
   background-image: var(--bg-m-image);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* background-position: left; */
-  background-size: 375px 812px;
-  max-width: 1440px;
-  max-width: 100%;
+  /* background-size: 375px 812px; */
+  /* max-width: 1440px; */
+  width: 100%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .hero-contact {
     flex-wrap: wrap;
     justify-content: flex-end;
