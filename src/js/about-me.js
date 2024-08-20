@@ -48,9 +48,9 @@ let parameters = {
 
 new Swiper('div.swiper.about-me-swiper-container', parameters);
 
-new Accordion('.accordion-container', {
-    duration: 600,
-    showMultiple: false,
-    openOnInit: [0],
-});
+// new Accordion('.accordion-container', {
+//     duration: 600,
+//     showMultiple: false,
+//     openOnInit: [0],
+// });
 
