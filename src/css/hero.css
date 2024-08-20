@@ -72,7 +72,7 @@
 }
 
 .main-title {
-  width: 343px;
+  max-width: 343px;
   font-size: 50px;
   font-weight: 500;
   line-height: 1;
@@ -177,7 +177,7 @@
   }
 
   .main-title {
-    width: 632px;
+    max-width: 632px;
     font-size: 90px;
     font-weight: 500;
     line-height: 1;
@@ -270,7 +270,7 @@
   }
 
   .main-title {
-    width: 1084px;
+    max-width: 1084px;
     margin-left: auto;
     margin-right: auto;
     font-size: 85px;
