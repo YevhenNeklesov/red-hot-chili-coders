@@ -36,10 +36,7 @@ box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: left;
   background-size: 375px 812px;
-  background-repeat: no-repeat;
-  background-position: center;
   max-width: 1440px;
-  background-size: cover;
   max-width: 100%;
 }
 @media screen and (max-width: 400px) {
@@ -163,9 +160,8 @@ text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-position: left;
     background-size: 768px 1024px;
     background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       max-width: 1440px;
-      background-size: cover;
       margin: 0 auto;
   }
 
@@ -253,12 +249,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     background: var(--bg-color);
     background-image: var(--bg-d-image);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       max-width: 1440px;
-      background-size: cover;
       margin: 0 auto;
       max-width: 100%;
   }
