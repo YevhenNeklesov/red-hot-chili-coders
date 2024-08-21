@@ -40,7 +40,6 @@ function createReviews(cardReviews) {
 async function initReviews() {
   try {
     const data = await getReviews();
-      console.log(data);
     swiperWrapper.insertAdjacentHTML('beforeend', createReviews(data));
   } catch (err) {
 
