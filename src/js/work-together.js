@@ -88,6 +88,7 @@ async function handleClickBtnSend(event){
             backgroundColor: '#FFA000',
             close: 'true',
         });
+        return;
     }
 
     try{
@@ -146,17 +147,17 @@ function populateForm(){
 }
 
 modalBtnClose.addEventListener("click", function(){
-    modalWindow.style.display = 'none';
+    modalWindow.classList.remove("is-open");
 })
 
 window.addEventListener("click", function(event){
     if(event.target === modalWindow){
-        modalWindow.style.display = 'none';
+        modalWindow.classList.remove("is-open");
     }
 })
 
 window.addEventListener("keydown", function(event){
     if(event.key === "Escape"){
-        modalWindow.style.display = 'none';
+        modalWindow.classList.remove("is-open");
     }
 })
