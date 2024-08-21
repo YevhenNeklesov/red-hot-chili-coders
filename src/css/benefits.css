@@ -96,7 +96,7 @@ body {
   
   @media (min-width: 768px) {
   #benefits {
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
   
     #benefits ul {
@@ -104,34 +104,27 @@ body {
       justify-content: center;
     }
   
-    #benefits ul li {
-          }
-  
-    .order-btn {
+   .order-btn {
       margin-top: 64px;
     }
   }
   
   @media (min-width: 1440px) {
     #benefits {
-      display: flex;
-      justify-content: space-between;
         text-align: left;
         padding-bottom: 164px;
     }
   
+.benefits-sect {
+  display: flex;
+  justify-content: space-between;
+}
+
   .benefits-cont {
     width: 680px;
   }
   
-    #benefits h2 {
-        }
-  
-    #benefits ul {
-       
-    }
-  
-    #benefits ul li {
+   #benefits ul li {
       width: 332px;
     }
   }
