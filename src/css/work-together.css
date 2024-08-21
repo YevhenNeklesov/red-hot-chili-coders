@@ -333,7 +333,7 @@
 
   .work-together-item-link:hover {
     border-color: #fafafa;
-    transform: scale(106%, 106%);
+    /* transform: scale(100%, 100%); */
   }
 
   /* modal */
@@ -376,7 +376,7 @@
   }
 
   .work-together-inner {
-    padding-top: 88 px;
+    padding-top: 88px;
     padding-bottom: 169px;
   }
 
