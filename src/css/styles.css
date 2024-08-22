@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+
 @import 'modern-normalize';
 @import url('./reset.css');
 @import url('./general.css');
@@ -21,7 +22,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 :root {
   font-family: Inter Tight, Avenir, Helvetica, Arial, sans-serif;

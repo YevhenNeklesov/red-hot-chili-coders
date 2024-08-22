@@ -1,6 +1,8 @@
 const MENU_BUTTON = document.querySelector(".HeaderMenuButton");
 const MENU_LIST = document.querySelector(".HeaderMenuList");
 
+
+
 let menuCount = 1;
 
 MENU_BUTTON.addEventListener("click", (event) => {
@@ -17,3 +19,5 @@ MENU_LIST.addEventListener("click", (event) => {
     menuCount += 1;
     MENU_LIST.classList.remove("MenuIsVisible");
 });
+
+
