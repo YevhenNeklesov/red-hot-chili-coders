@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 16px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 /* @media (min-width: 1000px) {
   .container-before-accordion {
@@ -56,7 +56,7 @@
   }
 
   .container-before-accordion {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
 
   .container-with-info {
@@ -92,8 +92,12 @@
     padding-bottom: 164px;
   }
 
+  .container-before-accordion {
+    margin-bottom: 96px;
+  }
+
   .list-about-me {
-    padding-top: 96px;
+    /* padding-top: 96px; */
   }
 
   /* .container-with-info {

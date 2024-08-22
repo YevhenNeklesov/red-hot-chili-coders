@@ -57,7 +57,7 @@ body {
   margin: 0;
   vertical-align: middle;
   font-family: 'Inter Tight', sans-serif;
-  padding-top: 64px;
+  margin-top: 64px;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
