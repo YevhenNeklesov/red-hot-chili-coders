@@ -122,6 +122,7 @@ body {
 
   .benefits-cont {
     width: 680px;
+    margin-left: auto;
   }
 
   #benefits h2 {

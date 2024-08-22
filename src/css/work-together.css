@@ -350,11 +350,13 @@
 
 @media screen and (min-width: 1440px) {
   .work-together-inner {
-    padding: 88px 196px 169px 196px;
+    padding: 0 196px 0px 196px;
   }
 
   .work-together {
     background-image: url(/img/work-together-background-desktop-1x.png);
+    padding-top: 80px;
+    padding-bottom: 169px;
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
