@@ -18,6 +18,11 @@
 @import url('./work-together.css');
 @import url('./modal-window.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   font-family: Inter Tight, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
