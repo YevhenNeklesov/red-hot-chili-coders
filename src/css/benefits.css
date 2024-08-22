@@ -96,7 +96,7 @@ body {
 
 @media (min-width: 768px) {
   #benefits {
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 
   #benefits ul {
@@ -122,7 +122,6 @@ body {
 
   .benefits-cont {
     width: 680px;
-    margin-left: auto;
   }
 
   #benefits h2 {

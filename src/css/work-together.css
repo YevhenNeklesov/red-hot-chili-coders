@@ -45,8 +45,6 @@
 }
 
 .work-together-form {
-  /* display: flex;
-  flex-direction: column; */
   margin-bottom: 64px;
 }
 
@@ -59,13 +57,6 @@
   display: block;
   margin-bottom: 32px;
 }
-
-/* .work-together-input-wrap {
-} */
-
-/* .work-together-form > label + label {
-  margin-bottom: 32px;
-} */
 
 .work-together-input::placeholder {
   color: rgba(250, 250, 250, 0.6);
@@ -80,7 +71,6 @@
 .work-together-input {
   display: block;
   width: 100%;
-  /* height: 24px; */
   padding-bottom: 20px;
   color: rgba(250, 250, 250, 0.6);
   font-family: inherit;
@@ -110,7 +100,6 @@
 }
 
 .success {
-  /* position: absolute; */
   color: #3cbc81;
   font-family: Inter Tight;
   font-size: 14px;
@@ -121,7 +110,6 @@
 }
 
 .error {
-  /* position: absolute; */
   color: #e74a3b;
   font-family: Inter Tight;
   font-size: 14px;
@@ -288,16 +276,10 @@
 
   .work-together-label {
     margin-bottom: 0px;
-    /* margin-right: 32px; */
   }
 
   .work-together-label-comment {
     margin-bottom: 0;
-  }
-
-  .work-together-form > label + label {
-    margin-bottom: 0px;
-    /* margin-right: 32px; */
   }
 
   .work-together-input {
@@ -340,7 +322,7 @@
 
   .work-together-item-link:hover {
     border-color: #fafafa;
-    /* transform: scale(100%, 100%); */
+    transform: scale(106%, 106%);
   }
 
   /* modal */
@@ -368,8 +350,7 @@
 
 @media screen and (min-width: 1440px) {
   .work-together-inner {
-    width: 1048px;
-    margin: 0 auto;
+    padding: 88px 196px 169px 196px;
   }
 
   .work-together {
@@ -413,12 +394,4 @@
 
 .work-together-modal-btn-x-svg {
   stroke: #fafafa;
-}
-
-.iziToast .iziToast-close {
-  background-color: transparent;
-  /* color: white; Цвет крестика */
-  top: 10px; /* Отступ сверху */
-  right: 10px; /* Отступ справа */
-  position: absolute; /* Фиксируем позицию */
 }
