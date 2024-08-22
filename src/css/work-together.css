@@ -322,7 +322,7 @@
 
   .work-together-item-link:hover {
     border-color: #fafafa;
-    transform: scale(106%, 106%);
+    /* transform: scale(106%, 106%); */
   }
 
   /* modal */
