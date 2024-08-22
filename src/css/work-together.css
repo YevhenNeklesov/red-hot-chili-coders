@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -13,8 +15,6 @@
 }
 
 .work-together-inner {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .work-together-title-wrap {
@@ -150,6 +150,7 @@
 
 .work-together-list {
   display: flex;
+  /* flex-wrap: nowrap; */
   gap: 4px;
 }
 .work-together-list-item {
@@ -235,9 +236,17 @@
   letter-spacing: -0.32px;
 }
 
+@media screen and (max-width: 350px) {
+  .work-together-list {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-together {
     background-image: url(/img/work-together-background-tablet-1x.png);
+    padding-top: 80px;
+    padding-bottom: 169px;
   }
 
   @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -247,8 +256,6 @@
   }
 
   .work-together-inner {
-    padding-top: 80px;
-    padding-bottom: 169px;
   }
 
   .work-together-title-wrap {
@@ -376,8 +383,6 @@
   }
 
   .work-together-inner {
-    padding-top: 88px;
-    padding-bottom: 169px;
   }
 
   .work-together-title-wrap {

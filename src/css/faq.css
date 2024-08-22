@@ -2,6 +2,10 @@
      margin-bottom: 164px;
  } */
 
+.faq-section {
+  padding-bottom: 64px;
+}
+
 .faq-accordion-container .ac {
   border: none;
   background-color: transparent;
@@ -34,7 +38,6 @@
 
 .faq-container {
   /* background: #1c1d20; */
-  padding-bottom: 64px;
 }
 .faq-section {
   /* margin-bottom: 64px; */
@@ -144,9 +147,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .faq-container {
+  .faq-section {
     padding-bottom: 96px;
   }
+
   /* .faq-section {
     margin-bottom: 96px;
   } */
@@ -198,15 +202,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .faq-container {
+  .faq-section {
     padding-bottom: 164px;
   }
   .faq-accordion-container .ac {
     border: none;
-  }
-
-  .faq-section {
-    margin-bottom: 164px;
   }
 
   .faq-accordion-container .ac:first-child {
