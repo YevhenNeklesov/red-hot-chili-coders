@@ -325,7 +325,7 @@
   /* width: 28px;
   height: 28px; */
   right: 0;
-  top: 50px;
+  top: 80px;
   stroke: transparent;
   background-color: transparent;
   border: none;
@@ -351,7 +351,7 @@
 @media screen and (min-width: 768px) {
   .about-me-btn-next {
     right: 0;
-    top: 80px;
+    top: 140px;
   }
 
   .about-me-swiper-btn {
